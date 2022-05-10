@@ -23,9 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Checkout
+       -
+        name: Checkout
         uses: actions/checkout@v2
-      - name: GoReleaser Release
+       -
+        name: GoReleaser Release
         uses: goreleaser/goreleaser-action@v2
         with:
           version: v0.174.1
