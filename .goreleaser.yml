@@ -8,7 +8,9 @@ builds:
 #snapshot:
 #  name_template: '{{ incpatch .Version }}-devel'
 release:
-  disable: false
+  github:
+    owner: RajeshMohanty23
+    name: https://github.com/Rajeshmohanty23/golang-release-action.git
   name_template: "{{ incpatch .Tag }}"
   mode: append
   header: |
