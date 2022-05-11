@@ -10,7 +10,7 @@ builds:
 release:
   github:
     owner: RajeshMohanty23
-    name: https://github.com/Rajeshmohanty23/golang-release-action.git
+    name: golang-release-action
   name_template: "{{ incpatch .Tag }}"
   mode: append
   header: |
