@@ -9,7 +9,7 @@ snapshot:
   name_template: '{{ incpatch .Version }}-devel'
 release:
   disable: false
-  name_template: "{{ incpatch .Tag }}"
+  name_template: "{{ incpatch .Version }}"
   mode: append
   header: |
     Welcome to this new release!
