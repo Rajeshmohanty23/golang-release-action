@@ -10,6 +10,7 @@ snapshot:
 release:
   disable: false
   name_template: "{{ incpatch .Tag }}"
+  mode: append
   header: |
     Welcome to this new release!
   footer: |
