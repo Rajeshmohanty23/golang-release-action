@@ -1,7 +1,7 @@
 name: main-release
 
 on:
-  release:
+  push:
     branches:
       - 'main'
     tags:
