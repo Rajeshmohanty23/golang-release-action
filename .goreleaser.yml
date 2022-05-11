@@ -5,13 +5,13 @@ builds:
       - linux
     goarch:
       - amd64
-snapshot:
-  name_template: '{{ incpatch .Version }}-devel'
+#snapshot:
+#  name_template: '{{ incpatch .Version }}-devel'
 release:
   disable: false
-  name_template: "{{ incpatch .Version }}"
+  name_template: "{{ incpatch .Tag }}"
   mode: append
   header: |
     Welcome to this new release!
   footer: |
-    Those were the changes on {{ .Tag }}!
+    Those were the changes on {{ incpatch .Tag }}!
