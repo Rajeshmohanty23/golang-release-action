@@ -5,13 +5,13 @@ builds:
       - linux
     goarch:
       - amd64
-#snapshot:
-#  name_template: '{{ incpatch .Version }}-devel'
+snapshot:
+  name_template: '{{ .Version }}-devel'
 release:
   github:
     owner: RajeshMohanty23
     name: golang-release-action
-  name_template: "{{ incpatch .Tag }}"
+  name_template: "{{ .Tag }}"
   mode: append
   header: |
     Welcome to this new release!
