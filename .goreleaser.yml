@@ -3,11 +3,12 @@ builds:
   - env: [CGO_ENABLED=0]
     goos:
       - linux
-
     goarch:
       - amd64
-
+snapshot:
+  name_template: '{{ incpatch .Version }}-devel'
 release:
+  disable: false
   name_template: "{{ incpatch .Tag }}"
   header: |
     Welcome to this new release!
